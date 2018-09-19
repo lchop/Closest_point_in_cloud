@@ -34,7 +34,6 @@ void filter_compute_distance_cloud(const sensor_msgs::PointCloud2ConstPtr& input
 	//Compute the minDistance and publish marker of this point
 
 	double minDistance=0;
-	double maxDistance=1;
 	double min_angle_radx=0.0;
 	double min_angle_rady=0.0;
 	double xX=0.0,yY=0.0,zZ=0.0;
@@ -118,13 +117,13 @@ void filter_compute_distance_cloud(const sensor_msgs::PointCloud2ConstPtr& input
 			continue;
     		}
     }
-  // cout<<"Distance="<<minDistance<<"\n";
-  // 	cout<<"Angle in Degree X axis="<<min_angle_radx*(180/3.14159265358979323846)<<"\n";
-  // 	cout<<"Angle in Degree Y axis="<<min_angle_rady*(180/3.14159265358979323846)<<"\n";
-  // 	cout<<"pointXcoordinate="<<xX<<"\n";
-  // 	cout<<"pointYcoordinate="<<yY<<"\n";
-  // 	cout<<"pointZcoordinate="<<zZ<<"\n";
-  // 	cout<<"count="<<count<<"\n";
+  	cout<<"Distance="<<minDistance<<"\n";
+   	cout<<"Angle in Degree X axis="<<min_angle_radx*(180/3.14159265358979323846)<<"\n";
+   	cout<<"Angle in Degree Y axis="<<min_angle_rady*(180/3.14159265358979323846)<<"\n";
+   	cout<<"pointXcoordinate="<<xX<<"\n";
+   	cout<<"pointYcoordinate="<<yY<<"\n";
+   	cout<<"pointZcoordinate="<<zZ<<"\n";
+   	cout<<"count="<<count<<"\n";
 	
 }
 

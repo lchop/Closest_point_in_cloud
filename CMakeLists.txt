@@ -8,7 +8,7 @@ find_package(catkin REQUIRED COMPONENTS roscpp rospy std_msgs genmsg )
 find_package(PCL 1.7 REQUIRED)
 find_package(catkin REQUIRED COMPONENTS tf)
 ## Declare ROS messages and services
-#add_message_files(DIRECTORY msg FILES Num.msg)
+#add_message_files(DIRECTORY vel_output FILES Num.vel_output)
 #add_service_files(DIRECTORY srv FILES AddTwoInts.srv)
 
 ## Generate added messages and services
